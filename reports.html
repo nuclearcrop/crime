@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrimeLens India - Reports Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.container{
+width:95%;
+max-width:1400px;
+margin:auto;
+}
+
+/* Navbar */
+
+nav{
+background:#111827;
+padding:18px 0;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#d1d5db;
+}
+
+/* Header */
+
+.header{
+padding:50px 0;
+}
+
+.header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.header p{
+color:#94a3b8;
+}
+
+/* Search */
+
+.search-box{
+display:flex;
+gap:10px;
+margin-top:25px;
+max-width:800px;
+}
+
+.search-box input{
+flex:1;
+padding:15px;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+}
+
+.search-box button{
+padding:15px 25px;
+background:#0ea5e9;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+font-weight:600;
+}
+
+/* KPI */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
+
+.card{
+background:#111827;
+padding:25px;
+border-radius:16px;
+}
+
+.card h4{
+color:#94a3b8;
+margin-bottom:10px;
+}
+
+.card h2{
+font-size:32px;
+}
+
+/* Section */
+
+.section{
+margin:40px 0;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
+}
+
+/* Reports Grid */
+
+.reports-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.report-card{
+background:#111827;
+padding:25px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.report-card h3{
+margin-bottom:10px;
+}
+
+.report-card p{
+color:#94a3b8;
+margin-bottom:20px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#0ea5e9;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+/* Table */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#111827;
+border-radius:16px;
+overflow:hidden;
+}
+
+th{
+background:#1e293b;
+padding:15px;
+text-align:left;
+}
+
+td{
+padding:15px;
+border-top:1px solid rgba(255,255,255,0.05);
+}
+
+tr:hover{
+background:#1e293b;
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+color:#94a3b8;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.header h1{
+font-size:32px;
+}
+
+.search-box{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<div class="container nav-wrapper">
+
+<div class="logo">
+CrimeLens India
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="states.html">States</a>
+<a href="districts.html">Districts</a>
+<a href="police-stations.html">Police Stations</a>
+<a href="crime-stats.html">Crime Stats</a>
+<a href="scam-tracker.html">Scam Tracker</a>
+<a href="transparency.html">Transparency</a>
+<a href="reports.html">Reports</a>
+</div>
+
+</div>
+
+</nav>
+
+<!-- Header -->
+
+<section class="container header">
+
+<h1>Reports Center</h1>
+
+<p>
+Download crime analytics reports, transparency reports and public datasets.
+</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search reports, states, districts...">
+
+<button>
+Search
+</button>
+
+</div>
+
+</section>
+
+<!-- KPI -->
+
+<section class="container">
+
+<div class="grid">
+
+<div class="card">
+<h4>Total Reports</h4>
+<h2>1,245</h2>
+</div>
+
+<div class="card">
+<h4>Datasets</h4>
+<h2>380</h2>
+</div>
+
+<div class="card">
+<h4>States Covered</h4>
+<h2>36</h2>
+</div>
+
+<div class="card">
+<h4>Downloads</h4>
+<h2>2.1M</h2>
+</div>
+
+</div>
+
+</section>
+
+<!-- Featured Reports -->
+
+<section class="container section">
+
+<h2 class="section-title">
+Featured Reports
+</h2>
+
+<div class="reports-grid">
+
+<div class="report-card">
+
+<h3>National Crime Report 2026</h3>
+
+<p>
+Comprehensive analysis of crime trends, crime rates, solved cases and state rankings.
+</p>
+
+<a href="#" class="btn">
+Download PDF
+</a>
+
+</div>
+
+<div class="report-card">
+
+<h3>Cyber Crime Intelligence Report</h3>
+
+<p>
+Analysis of cyber fraud, online scams, phishing attacks and digital threats.
+</p>
+
+<a href="#" class="btn">
+Download PDF
+</a>
+
+</div>
+
+<div class="report-card">
+
+<h3>Police Transparency Report</h3>
+
+<p>
+Police budgets, vacancies, officer ratios and accountability indicators.
+</p>
+
+<a href="#" class="btn">
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Dataset Library -->
+
+<section class="container section">
+
+<h2 class="section-title">
+Public Dataset Library
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Dataset</th>
+<th>Format</th>
+<th>Records</th>
+<th>Last Updated</th>
+<th>Download</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>State Crime Statistics</td>
+<td>CSV</td>
+<td>1.2M</td>
+<td>25 Jun 2026</td>
+<td>Download</td>
+</tr>
+
+<tr>
+<td>District Crime Analytics</td>
+<td>Excel</td>
+<td>850K</td>
+<td>25 Jun 2026</td>
+<td>Download</td>
+</tr>
+
+<tr>
+<td>Police Station Directory</td>
+<td>CSV</td>
+<td>17,500</td>
+<td>25 Jun 2026</td>
+<td>Download</td>
+</tr>
+
+<tr>
+<td>Scam Tracker Dataset</td>
+<td>JSON</td>
+<td>128K</td>
+<td>25 Jun 2026</td>
+<td>Download</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- Export Tools -->
+
+<section class="container section">
+
+<h2 class="section-title">
+Export Analytics
+</h2>
+
+<div class="reports-grid">
+
+<div class="report-card">
+
+<h3>Generate State Report</h3>
+
+<p>
+Create downloadable analytics reports for any Indian state.
+</p>
+
+<a href="#" class="btn">
+Generate
+</a>
+
+</div>
+
+<div class="report-card">
+
+<h3>Generate District Report</h3>
+
+<p>
+Export district crime statistics and safety analytics.
+</p>
+
+<a href="#" class="btn">
+Generate
+</a>
+
+</div>
+
+<div class="report-card">
+
+<h3>Generate Police Station Report</h3>
+
+<p>
+Export station level analytics, FIR counts and performance metrics.
+</p>
+
+<a href="#" class="btn">
+Generate
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Recent Downloads -->
+
+<section class="container section">
+
+<h2 class="section-title">
+Most Downloaded Reports
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Report</th>
+<th>Downloads</th>
+<th>Category</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>National Crime Report 2026</td>
+<td>245,000</td>
+<td>Crime Statistics</td>
+</tr>
+
+<tr>
+<td>Cyber Crime Intelligence Report</td>
+<td>188,000</td>
+<td>Cyber Security</td>
+</tr>
+
+<tr>
+<td>Police Transparency Report</td>
+<td>142,000</td>
+<td>Transparency</td>
+</tr>
+
+<tr>
+<td>Scam Tracker Annual Report</td>
+<td>131,000</td>
+<td>Scam Intelligence</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+CrimeLens India © 2026<br>
+Reports & Open Data Center
+
+</footer>
+
+</body>
+</html>
